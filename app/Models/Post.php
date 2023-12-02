@@ -16,6 +16,9 @@ class Post extends Model
         'image',
         'tags'
     ];
+    protected $casts = [
+        'tags' => 'array'
+    ];
 
     /**
      * The categories that belong to the Post
